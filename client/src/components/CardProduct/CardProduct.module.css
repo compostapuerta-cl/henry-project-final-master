@@ -1,0 +1,45 @@
+.card_txt {
+    font-family: var(--font-family-poppins);
+    color: var(--color-text-light);
+    padding: 0;
+    padding-top: .2rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Dividir en 5 columnas */
+    grid-template-rows: auto auto; /* Dos filas automáticas */
+}
+
+.name_product {
+    grid-column: 1 / span 4; /* Ocupa las dos primeras columnas */
+    grid-row: 1; /* Está en la primera fila */
+}
+
+.price_product {
+    grid-column: 1 / span 2; /* Ocupa la primera columna */
+    grid-row: 2; /* Está en la segunda fila */
+}
+
+.icons {
+    color: var(--color-text-light);
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+    gap: 1rem;
+    align-self: center;
+    justify-self: center;
+    color: var(--color-accent);
+    grid-column: 4 / span 3; /* Ocupa las dos últimas columnas */
+    grid-row: 1 / span 2; /* Ocupa las dos filas */
+}
+
+.cart {
+    position: relative;
+    color: var(--color-text-light);
+}
+
+.plus {
+    position: absolute;
+    color: var(--color-accent);
+    top: -.4rem;
+    left: 1.5rem;
+}

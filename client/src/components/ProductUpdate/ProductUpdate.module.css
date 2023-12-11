@@ -1,0 +1,16 @@
+.container {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.tableHeaderCell:hover {
+  cursor: pointer; /* Cambia el cursor a una mano para indicar que es interactivo */
+}
+
+@media (max-width: 600px) {
+  .buttonContainer {
+    display: flex;
+    margin: 5px;
+  }
+}
+
